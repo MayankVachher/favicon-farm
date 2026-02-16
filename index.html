@@ -36,6 +36,8 @@ h1 { font-size: 22px; font-weight: 700; color: var(--text); display: flex; align
 .copy-btn.copied { background: #22c55e; border-color: #22c55e; color: #fff; }
 footer { margin-top: 56px; text-align: center; font-size: 13px; color: var(--text); font-family: 'JetBrains Mono', monospace; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 6px; }
 footer i { font-style: normal; }
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--btn-bg); color: var(--btn-text); border: 2px solid var(--card-border); font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; padding: 8px 16px; opacity: 0; transition: opacity .2s, transform .2s; pointer-events: none; max-width: 90vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; z-index: 10; }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 </style>
 </head>
 <body>
@@ -44,6 +46,7 @@ footer i { font-style: normal; }
     <h1><img src="favicon-farm.svg" class="logo" alt="favicon-farm">favicon-farm<button class="theme-toggle" id="theme-toggle"><i class="ri-sun-line icon-sun"></i><i class="ri-moon-line icon-moon"></i></button></h1>
   </header>
   <div id="grid"></div>
+  <div class="toast" id="toast"></div>
   <footer>Made with <i class="ri-heart-fill" style="color:#e53935;"></i> + <i class="ri-robot-2-fill" style="font-size:1.2em;color:#43a047;"></i></footer>
 </div>
 <script>
@@ -61,11 +64,18 @@ icons.forEach(name => {
   `;
   grid.appendChild(card);
 });
+let toastTimer;
 function copyUrl(el) {
-  navigator.clipboard.writeText(el.dataset.url);
+  const url = el.dataset.url;
+  navigator.clipboard.writeText(url);
   el.classList.add('copied');
   el.textContent = 'copied!';
   setTimeout(() => { el.classList.remove('copied'); el.textContent = 'copy'; }, 1500);
+  const toast = document.getElementById('toast');
+  toast.textContent = 'Copied: ' + url;
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { toast.classList.remove('show'); }, 2000);
 }
 const toggle = document.getElementById('theme-toggle');
 const saved = localStorage.getItem('theme');
