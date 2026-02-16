@@ -1,4 +1,4 @@
-# favicon-farm
+# <img src="favicon-farm.svg" alt="favicon-farm logo" width="32" height="32"> favicon-farm
 
 A central place for all my project favicons — SVGs served via [GitHub Pages](https://mayankvachher.github.io/favicon-farm/).
 
