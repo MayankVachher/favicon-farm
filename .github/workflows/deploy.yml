@@ -24,6 +24,7 @@ jobs:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       deployments: write
     steps:
       - uses: actions/checkout@v4
