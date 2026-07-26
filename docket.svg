@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .back  { fill: #D5442A; }
+    .sheet { fill: #FAFAF7; stroke: #35393B; }
+    .line  { fill: #35393B; }
+    /* firelight: the seal glows warmer, paper goes cream */
+    @media (prefers-color-scheme: dark) {
+      .back  { fill: #E8694C; }
+      .sheet { fill: #F2EADD; stroke: #35393B; }
+    }
+  </style>
+  <rect class="back" x="32" y="4" width="64" height="64" rx="14"/>
+  <rect class="sheet" x="8" y="28" width="62" height="64" rx="13" stroke-width="7"/>
+  <rect class="line" x="22" y="49" width="34" height="9" rx="4.5" opacity="0.85"/>
+  <rect class="line" x="22" y="68" width="23" height="9" rx="4.5" opacity="0.45"/>
+</svg>
