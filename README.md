@@ -9,6 +9,7 @@ A central place for all my project favicons — SVGs served via [GitHub Pages](h
 | Bloodhound | [bloodhound.svg](https://favicon-farm.mynkv.ca/bloodhound.svg) | `https://favicon-farm.mynkv.ca/bloodhound.svg` |
 | docket | [docket.svg](https://favicon-farm.mynkv.ca/docket.svg) | `https://favicon-farm.mynkv.ca/docket.svg` |
 | favicon-farm | [favicon-farm.svg](https://favicon-farm.mynkv.ca/favicon-farm.svg) | `https://favicon-farm.mynkv.ca/favicon-farm.svg` |
+| kuber | [kuber.svg](https://favicon-farm.mynkv.ca/kuber.svg) | `https://favicon-farm.mynkv.ca/kuber.svg` |
 | www | [www.svg](https://favicon-farm.mynkv.ca/www.svg) | `https://favicon-farm.mynkv.ca/www.svg` |
 
 ## Usage
