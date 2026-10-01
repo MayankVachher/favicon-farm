@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- kuber: crowned bust of Kubera in saffron -->
+  <style>
+    .back  { fill: #E8772E; }
+    .body  { fill: #2A1A12; stroke: #E8772E; stroke-width: 3; }
+    .gold  { fill: #FFF4E0; }
+    .crown { fill: #FFF4E0; stroke: #E8772E; stroke-width: 3; }
+  </style>
+  <rect class="back" width="100" height="100" rx="22"/>
+  <path class="body" d="M13 95 C13 81 29 72 50 72 C71 72 87 81 87 95 Z"/>
+  <circle class="body" cx="50" cy="53" r="18"/>
+  <rect class="crown" x="43" y="15" width="14" height="9" rx="4.5"/>
+  <rect class="crown" x="38" y="23" width="24" height="9" rx="4.5"/>
+  <rect class="crown" x="33" y="31" width="34" height="9" rx="4.5"/>
+  <circle class="gold" cx="50" cy="10" r="4"/>
+  <circle class="gold" cx="31" cy="58" r="3"/>
+  <circle class="gold" cx="69" cy="58" r="3"/>
+  <path d="M35 76 Q50 90 65 76" fill="none" stroke="#FFF4E0" stroke-width="4" stroke-linecap="round"/>
+  <circle class="gold" cx="50" cy="84" r="4"/>
+</svg>
